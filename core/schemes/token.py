@@ -3,4 +3,10 @@ from pydantic import BaseModel
 
 
 class TokenData(BaseModel):
-    sub: Optional[int]
+    sub: Optional[str]
+
+
+class TokenResponse(BaseModel):
+    access_token: str
+    user_id: int
+    username: str

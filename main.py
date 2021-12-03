@@ -11,7 +11,7 @@ settings = get_settings()
 app = FastAPI(debug=settings.DEBUG)
 
 
-@app.on_event('start')
+@app.on_event('startup')
 def on_start():
     Base.metadata.create_all(bind=engine)
 
