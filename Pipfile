@@ -8,6 +8,9 @@ fastapi = {extras = ["all"], version = "*"}
 uvicorn = "*"
 pydantic = "*"
 python-jose = {extras = ["cryptography"], version = "*"}
+alembic = "*"
+sqlalchemy = "*"
+passlib = {extras = ["bcrypt"], version = "*"}
 
 [dev-packages]
 
