@@ -21,7 +21,7 @@ Create digital artwork on a canvas on the web to share online and also export as
 -   [ ] User can see an `input field` where he can type a new message
 -   [ ] By pressing the `enter` key or by clicking on the `send` button the text will be displayed in the `chat box` alongside his username (e.g. `John Doe: Hello World!`)
 
-## 🌟 Bonus features
+##### 🌟 Bonus features
 
 -   [ ] The messages will be visible to all the Users that are in the chat app (using WebSockets)
 -   [ ] When a new User joins the chat, a message is displayed to all the existing Users
