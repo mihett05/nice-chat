@@ -9,8 +9,8 @@ The project was made for learning purposes. Made by Jeb and mihett05.
 
 ## About the Challenge
 #### 🛠 Difficulty Level: Intermediate 
-📅 Start: November 26th<br>
-📅 Deadline: December 2nd 16:00 (4PM) GMT
+📅 Start: December 3rd<br>
+📅 Deadline: December 9th 16:00 (4PM) GMT
 
 #### 📝 Project Description
 Create digital artwork on a canvas on the web to share online and also export as images.
