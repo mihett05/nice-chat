@@ -1,10 +1,14 @@
 import React from 'react';
+import { useStore } from 'effector-react';
 import { Link } from 'react-router-dom';
 import { Container, Flex, Heading, Spacer, Box, Button } from '@chakra-ui/react';
 import { FaUser } from 'react-icons/fa';
 
+import { $users } from '../store/users';
+
 function Header() {
-  const isAuthenticated = true;
+  const users = useStore($users);
+  const isAuthenticated = users.user !== null;
 
   return (
     <Container maxW="container.xl">
