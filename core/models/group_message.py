@@ -4,12 +4,12 @@ from core import Base
 import datetime
 
 
-class Contact(Base):
-    __tablename__ = 'messages'
+class GroupMessages(Base):
+    __tablename__ = 'group_messages'
 
     id = Column(Integer, primary_key=True, index=True)
-    sender_id = Column(Integer, ForeignKey('contact.user_id'))
-    receiver_id = Column(Integer, ForeignKey('contact.contact_id'))
+    sender_id = Column(Integer)
+    group = Column(Integer, ForeignKey('group.id'))
     date = Column(DateTime, nullable=False, default=datetime.datetime.now())
     content = Column(String)
 
