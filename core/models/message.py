@@ -4,7 +4,7 @@ from core import Base
 import datetime
 
 
-class Contact(Base):
+class Message(Base):
     __tablename__ = 'messages'
 
     id = Column(Integer, primary_key=True, index=True)
@@ -13,3 +13,6 @@ class Contact(Base):
     date = Column(DateTime, nullable=False, default=datetime.datetime.now())
     content = Column(String)
 
+new_msg = Message(sender_id=user, receiver_id=contact, content=msg)
+db.add(new_msg)
+db.commit()
