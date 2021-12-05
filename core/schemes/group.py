@@ -3,11 +3,7 @@ from typing import List
 
 
 class Group(BaseModel):
-        name: str
-
-
-class GroupCreation(Group):
-        name: str
+    name: str
 
 
 class GroupInDb(Group):
