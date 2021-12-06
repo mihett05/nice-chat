@@ -11,7 +11,4 @@ class User(Base):
     id = Column(Integer, primary_key=True, index=True)
     username = Column(String, unique=True, index=True)
     hashed_password = Column(String)
-    contacts = relationship("Contact", backref="user")
-    registered = Column(DateTime, nullable=False, default=datetime.datetime.now())
-    last_online = Column(DateTime, nullable=False, default=datetime.datetime.now())
     online = Column(Boolean, default=True)
