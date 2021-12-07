@@ -7,7 +7,7 @@ class Message(Base):
     __tablename__ = 'messages'
 
     id = Column(Integer, primary_key=True, index=True)
-    sender_id = Column(Integer, ForeignKey('user.id'))
+    sender_id = Column(Integer, ForeignKey('users.id'))
     date = Column(DateTime, nullable=False, default=datetime.datetime.now())
     content = Column(String)
 
